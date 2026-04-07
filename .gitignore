@@ -1,0 +1,81 @@
+# general
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.swp
+
+# editors
+.vscode/
+.idea/
+
+# python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+venv/
+.venv/
+env/
+backend/venv/
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# datasets — too large for git
+dataset/
+
+# trained models — track with DVC or just re-train
+*.h5
+*.keras
+*.tflite
+*.pb
+*.pt
+*.pth
+ml-engine/models/
+
+# audio model files downloaded at runtime
+ml-engine/audio/models/
+*.onnx
+*.onnx.json
+whisper_cache/
+*.wav
+*.mp3
+*.ogg
+
+# env files — never commit real credentials
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+
+# mongodb data volume
+data/
+
+# sqlite leftovers from v1 experiments
+*.db
+*.sqlite
+*.sqlite3
+
+# docker local overrides
+docker-compose.override.yml
+
+# scratch/notes dirs
+devlog.md
+scratch/
+notes/

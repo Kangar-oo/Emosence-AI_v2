@@ -1,0 +1,4 @@
+/* Custom styles if needed, mostly handled by Tailwind CDN */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

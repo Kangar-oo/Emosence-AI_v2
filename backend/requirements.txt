@@ -1,0 +1,24 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic-settings
+python-dotenv
+ollama
+
+# vision — will replace CNN with mediapipe in feature 4 but keeping both for now
+tensorflow
+opencv-python-headless
+numpy
+
+# database
+motor
+pymongo
+
+# audio — uncomment when starting feature 3
+# faster-whisper
+# piper-tts
+
+# testing
+pytest
+pytest-asyncio
+httpx
